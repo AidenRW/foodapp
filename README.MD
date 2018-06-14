@@ -1,1 +1,1 @@
-![Example]()
+![Example](wireframe.png)
