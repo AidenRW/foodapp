@@ -1,0 +1,38 @@
+
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  /* font-family: 'Abril Fatface', cursive; */
+}
+h2 {
+  text-align: center;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 32px;
+}
+h3{
+  font-size: 40px;
+  /* font-weight: bolder; */
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+}
+#a{
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: light;
+}
+
+#b{
+  font-weight: light;
+  font-size: 24px;
+  text-align: center;
+font-family: 'Montserrat', sans-serif;
+}
+
+#c {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+}
