@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     table.increments()
     table.string('location').notNullable().defaultsTo('')
     table.dateTime('date_time').notNullable().defaultsTo(knex.fn.now())
-    table.integer('host_id').notNulalble()
+    table.integer('host_id').notNullable()
     table.foreign('host_id').references('users.id').onDelete('CASCADE')
   })
 };
