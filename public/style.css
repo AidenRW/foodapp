@@ -1,13 +1,17 @@
-font-family: 'Montserrat', sans-serif;
+/* font-family: 'Montserrat', sans-serif;
 font-family: 'Rubik Mono One', sans-serif;
 font-family: 'Eater', cursive;
-font-family: 'Abril Fatface', cursive;
+font-family: 'Abril Fatface', cursive; */
 
-body {
-  background-image: url('img/home-bkgrd.svg');
+.body {
+  background-image: url("../img/background2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
-h1 {
 
+h1 {
+font-family: 'Rubik Mono One', sans-serif;
 }
 
 h2 {
