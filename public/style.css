@@ -3,7 +3,9 @@ font-family: 'Rubik Mono One', sans-serif;
 font-family: 'Eater', cursive;
 font-family: 'Abril Fatface', cursive;
 
-
+body {
+  background-image: url('img/home-bkgrd.svg');
+}
 h1 {
 
 }
