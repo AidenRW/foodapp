@@ -28,6 +28,8 @@ Allows users to collaborate and share ingredients for an event and receive autom
 ![Example](/images/wireframe.png)
 
 # Style Guide
+![Example](/images/colors.png)
+![Example](/images/fonts.png)
 
 # Trello Planning
 https://trello.com/b/PeqRQMHT/food-app
