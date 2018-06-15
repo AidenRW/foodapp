@@ -30,3 +30,4 @@ Allows users to collaborate and share ingredients for an event and receive autom
 # Style Guide
 
 # Trello Planning
+https://trello.com/b/PeqRQMHT/food-app
