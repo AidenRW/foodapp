@@ -4,12 +4,14 @@ font-family: 'Eater', cursive;
 font-family: 'Abril Fatface', cursive; */
 
 .body {
-  background-image: url("../img/background2.svg");
-  background-repeat: no-repeat;
-  background-
+  background-image: url("../img/mobile-bkgrd.svg");
+  background-repeat: repeat-y;
+  background-size: cover;
 
 }
-
+#logo {
+  padding: 50px, 200px, 50px, 10px;
+}
 h1 {
 font-family: 'Rubik Mono One', sans-serif;
 }
