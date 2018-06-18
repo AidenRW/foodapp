@@ -17,7 +17,7 @@ header {
   padding-top: 8em;
 }
 
-#header-logo {
+.header-logo {
   background-image: url("img/header.svg");
   background-repeat: no-repeat;
   background-size: cover;
