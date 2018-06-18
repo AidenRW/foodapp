@@ -1,10 +1,11 @@
 
 const knex = require('../../../knex')
 
-// const userData = 'hello'
-// console.log(userData)
 function getAll() {
-  console.log("hello");
+  return knex('users')
+    .then(result => {
+      return result;
+    })
 }
 
 function userLogin () {

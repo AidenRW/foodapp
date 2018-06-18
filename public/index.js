@@ -15,12 +15,9 @@ launch.addEventListener("click", function(e) {
   let emailToStore = email.value
   let nameToStore = name.value
 
-  $.ajax({
-    type: "POST",
-    url : `http://localhost:3000/api/signup`,
-    data: {name : nameToStore, email : emailToStore}
-  })
-// .then()
+  $.post('http://localhost:3000/hello')
 })
+
+
 
 })
