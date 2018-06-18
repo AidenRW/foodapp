@@ -1,11 +1,44 @@
-font-family: 'Montserrat', sans-serif;
+/* font-family: 'Montserrat', sans-serif;
 font-family: 'Rubik Mono One', sans-serif;
 font-family: 'Eater', cursive;
-font-family: 'Abril Fatface', cursive;
+font-family: 'Abril Fatface', cursive; */
 
+.body {
+  font-size: 32px;
+  background-image: url("../img/mobile-bkgrd.svg");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
 
+header {
+  text-align: center;
+  height: 20em;
+  width: auto;
+  padding-top: 13em;
+}
+
+#logo {
+  height: 12em;;
+  width: 20em;
+}
+
+#main-container {
+  padding-top: 15em;
+  line-height: 100%;
+  height:7em;
+  width: 15em;
+}
+
+footer {
+  height: 15em;
+  width: auto;
+}
+
+#launch {
+  /* background-color: #9e0627 ; */
+}
 h1 {
-
+font-family: 'Rubik Mono One', sans-serif;
 }
 
 h2 {

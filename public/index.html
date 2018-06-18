@@ -2,23 +2,52 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link <link href="style.css" rel="stylesheet">
-    <!-- Compiled and minified Materialize CSS Library -->
+
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <title>Title Goes Here</title>
+    <link href="style.css" rel="stylesheet">
+    <title>MUNCH</title>
   </head>
-  <body>
+  <body class="body">
 
-      
+
+  <header>
+    <div class="logo">
+      <img src="../img/logo.svg" id="logo">
+    </div>
+  </header>
+
+
+  <main>
+    <div class="container" id="main-container">
+      <form id="form">
+        <div class="form-group">
+          <label for="name">NAME</label>
+          <input type="text" class="form-control" id="name" required>
+          <label for="email">EMAIL</label>
+          <input type="email" class="form-control" id="email" required>
+          <label for="password">PASSWORD</label>
+          <input type="password" class="form-control" id="password" minlength="8" required>
+        </div>
+        <button type="submit" class="btn" id="launch">LAUNCH</button>
+      </form>
+    <div>
+  </main>
+
+
+<footer>
+
+</footer>
+
+
+
 
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <!-- Compiled and minified Materialize JavaScript Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="../index.js"></script>
   </body>
