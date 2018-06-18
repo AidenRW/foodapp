@@ -2,11 +2,16 @@ const express = require('express')
 const app = express();
 const port = process.env.PORT || 3000
 const bodyParser = require('body-parser')
+const knex = require('./knex')
+
 
 app.disable('x-powered-by')
 app.use(bodyParser.json())
 
 const routes = require('./server/src/routes/food.js')
+
+app.use(express.static('public'))
+
 app.use('/', routes)
 
 app.use((err, req, res, next) => {
@@ -20,3 +25,6 @@ app.use((req, res, next) => {
 
 const listener = () => console.log(`Listening on port: ${port}!`)
 app.listen(port, listener)
+
+
+ module.exports = app;
