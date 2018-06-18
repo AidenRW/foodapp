@@ -4,14 +4,38 @@ font-family: 'Eater', cursive;
 font-family: 'Abril Fatface', cursive; */
 
 .body {
+  font-size: 32px;
   background-image: url("../img/mobile-bkgrd.svg");
   background-repeat: repeat-y;
   background-size: cover;
 
 }
-#logo {
-  padding: 50px, 200px, 50px, 10px;
+
+header {
+  text-align: center;
+  height: 20em;
+  width: auto;
+  padding: 10em 5em 10em 5em;
+
 }
+
+#logo {
+  /* padding-top: 10em; */
+  height: 12em;;
+  width: 20em;
+}
+
+/* .logo {
+  margin: ;
+  padding: ;
+} */
+#main-container {
+  padding-top: 15em;
+  line-height: 100%;
+  height:7em;
+  width: 15em;
+}
+
 h1 {
 font-family: 'Rubik Mono One', sans-serif;
 }
