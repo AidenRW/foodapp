@@ -8,7 +8,6 @@ font-family: 'Abril Fatface', cursive; */
   background-image: url("../img/mobile-bkgrd.svg");
   background-repeat: repeat-y;
   background-size: cover;
-
 }
 
 header {
@@ -16,19 +15,13 @@ header {
   height: 20em;
   width: auto;
   padding: 10em 5em 10em 5em;
-
 }
 
 #logo {
-  /* padding-top: 10em; */
   height: 12em;;
   width: 20em;
 }
 
-/* .logo {
-  margin: ;
-  padding: ;
-} */
 #main-container {
   padding-top: 15em;
   line-height: 100%;
@@ -36,6 +29,14 @@ header {
   width: 15em;
 }
 
+footer {
+  height: 15em;
+  width: auto;
+}
+
+#launch {
+  /* background-color: #9e0627 ; */
+}
 h1 {
 font-family: 'Rubik Mono One', sans-serif;
 }

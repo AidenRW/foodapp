@@ -13,7 +13,7 @@ launch.addEventListener('touch', function(e) {
 
 
   // setTimeout(function() {
-  //   document.location.href = 'pig-map.html'
+  //   document.location.href = '<rocket launch>'
   // }, 2500)
 })
 
