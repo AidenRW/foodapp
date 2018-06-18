@@ -6,7 +6,7 @@ font-family: 'Abril Fatface', cursive; */
 .body {
   font-size: 32px;
   background-image: url("img/mobile-bkgrd.svg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -14,23 +14,45 @@ header {
   text-align: center;
   height: 36em;
   width: auto;
+
+}
+#landing-page {
   padding-top: 8em;
 }
 
-#header-logo {
+.svg-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.header-logo {
   background-image: url("img/header.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+#events-box {
 
-#logo {
-  height: 12em;;
-  width: 20em;
+}
+
+.logo {
+  padding-top: 3em;
+  padding-left: 3em;
+
+}
+
+.main {
+  background-color: #193944;
+  /* border-color: #08222e;
+  border-width: medium; */
 }
 
 #main-container {
-  padding-top: em;
+  /* padding-top: em; */
   line-height: 100%;
   height:7em;
   width: 15em;
@@ -43,16 +65,4 @@ footer {
 
 #launch {
   /* background-color: #9e0627 ; */
-}
-h1 {
-font-family: 'Rubik Mono One', sans-serif;
-}
-
-h2 {
-
-}
-
-h3{
-
-
 }
