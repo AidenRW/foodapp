@@ -4,7 +4,7 @@ const knex = require('../../../knex')
 // const userData = 'hello'
 // console.log(userData)
 function getAll() {
-
+  console.log("hello");
 }
 
 function userLogin () {

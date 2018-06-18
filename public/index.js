@@ -21,8 +21,6 @@ launch.addEventListener("click", function(e) {
     data: {name : nameToStore, email : emailToStore}
   })
 // .then()
-
-
 })
 
 })
