@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const ctrl = require('../controller/food.js')
 
-
+router.get('/', ctrl.getAll)
 // POST api/login (user login)
 router.post('/api/login', ctrl.userLogin)
 
