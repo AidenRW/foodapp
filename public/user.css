@@ -1,0 +1,12 @@
+header {
+  text-align: center;
+  height: 36em;
+  width: auto;
+  padding-top: 8em;
+}
+
+.header-logo {
+  background-image: url("img/header.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
