@@ -19,15 +19,5 @@ $( document ).ready(function(){
         .then(result => {
           console.log(result);
         })
-      // let nameValue = document.getElementById('name').value
-      // let timeValue = document.getElementById('time').value
-      // let dateValue = document.getElementById('date').value
-      // let locationValue = document.getElementById('location').value
-      //
-      // let payload = {name: nameValue,
-      // time: timeValue, date: dateValue, location: locationValue}
-
-
-
-})
+      })
 })
