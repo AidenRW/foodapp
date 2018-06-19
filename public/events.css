@@ -1,11 +1,29 @@
+
 body {
   font-size: 32px;
+  background-image: url("img/mobile-bkgrd.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 header {
   text-align: center;
   height: 20em;
   width: auto;
 }
+
+nav {
+  background-color: #3d545f;
+}
+
+#submit {
+  background-color: #3d545f;
+}
+
+#create-event {
+  background-color: #3d545f;
+}
+
 .svg-container {
 	display: inline-block;
 	position: relative;
@@ -17,38 +35,3 @@ header {
 
 .header-logo {
   background-image: url("img/header.svg");
-nav {
-  background-color: #3d545f;
-}
-
-.body {
-  font-size: 32px;
-  background-image: url("img/hotdog-bkgrd.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.main-header {
-    background-image: url("img/mobile-bkgrd.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  /* footer {
-    height: 10em;
-    width: auto; */
-  /* } */
-
-  #submit {
-    background-color: #3d545f;
-  }
-  #create-event {
-    background-color: #3d545f;
-  }
-  background-image: url("img/mobile-bkgrd.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-color: #193944; */
-  /* border-color: #08222e;
-  border-width: medium; */
-}
