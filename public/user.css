@@ -38,6 +38,14 @@ body {
   height: 10em;
 }
 
+.chip{
+   width: 240px;
+   height: 80px;
+   border-radius: 80px;
+   line-height: 80px;
+   font-size: 4em;
+}
+
 #ingredients-input-label {
   font-family: 'Rubik', sans-serif;
 }
