@@ -17,3 +17,7 @@ nav, side-nav {
 body {
   background-color: #0f222d;
 }
+
+#user-icon {
+  width: 8em;
+}
