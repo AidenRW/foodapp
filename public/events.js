@@ -7,15 +7,22 @@ $( document ).ready(function(){
   createEvent.addEventListener("click", function(e) {
     e.preventDefault()
     // console.log(node)
-    let createEventsForm = document.createElement(form)
-    let nameLabel = document.createElement(label)
-    let nameInput = document.createElement(input)
-    let timeLabel = document.createElement(label)
-    let timeInput = document.createElement(input)
-    let dateLabel = document.createElement(label)
-    let dateInput = document.createElement(input)
-    let locationLabel = document.createElement(label)
-    let locationInput = document.createElement(input)
+    let createEventsForm = document.createElement('form')
+    let nameLabel = document.createElement('label')
+      nameLabel.textContent = 'Event Name'
+    let nameInput = document.createElement('input')
+
+    let timeLabel = document.createElement('label')
+      timeLabel.textContent = 'Time'
+    let timeInput = document.createElement('input')
+
+    let dateLabel = document.createElement('label')
+      dateLabel.textContent = 'Date'
+    let dateInput = document.createElement('input')
+    
+    let locationLabel = document.createElement('label')
+      locationLabel.textContent = 'Location'
+    let locationInput = document.createElement('input')
 
     createEventsForm.appendChild(nameLabel)
     createEventsForm.appendChild(nameInput)
@@ -43,7 +50,6 @@ $( document ).ready(function(){
     // </form>`
 // console.log(createForm)
     // let formSpot = document.createElement("div")
-    node.appendChild(createForm)
 // console.log("click occurred on", e.target);
 
 
