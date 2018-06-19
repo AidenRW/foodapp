@@ -24,8 +24,36 @@
 
 
 
-    <main class="container" id="create-button">
-      <a class="btn-floating btn-large waves-effect waves-light" id="create-event"><i class="material-icons">add</i></a>
+  <main class="container">
+      <!-- <a class="btn-floating btn-large waves-effect waves-light" id="create-event"><i class="material-icons">add</i></a> -->
+      <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger  grey darken-2" href="#modal1" >CREATE EVENT</a>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <form id="form">
+              <div class="form-group">
+                
+                <label for="name">EVENT NAME</label>
+                <input name="name" type="text" class="form-control" id="name">
+
+                <label for="time">TIME</label>
+                <input name="time" type="text" class="form-control" id="time">
+
+                <label for="date">DATE</label>
+                <input name="date" type="text" class="form-control" id="date">
+
+                <label for="location">LOCATION</label>
+                <input name="location" type="text" class="form-control" id="location">
+
+                <button type="submit" class="btn" id="create-event">CREATE EVENT</button>
+
+              </div>
+            </form>
+        </div>
+      </div>
 
       <div id="events-box">
       </div>

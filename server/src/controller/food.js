@@ -28,8 +28,8 @@ function deleteIngredient () {
 
 }
 
-function createEvent () {
-
+function createEvent (req, res, next) {
+  console.log(req.body)
 }
 
 function eventInfo () {
