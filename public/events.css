@@ -1,0 +1,40 @@
+body {
+  font-size: 32px;
+}
+header {
+  text-align: center;
+  height: 20em;
+  width: auto;
+}
+.svg-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.header-logo {
+  background-image: url("img/header.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-header {
+    background-image: url("img/mobile-bkgrd.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* footer {
+    height: 10em;
+    width: auto; */
+  /* } */
+
+  #submit {
+    background-color: #3d545f;
+  }
+  #create-event {
+    background-color: #3d545f;
+  }

@@ -1,12 +1,13 @@
 $( document ).ready(function(){
 
-  // // console.log(join)
   let createEvent = document.getElementById('create-event')
   let node = document.getElementById('events-box')
+  let main = document.getElementById('create-button')
 
   createEvent.addEventListener("click", function(e) {
     e.preventDefault()
-    // console.log(node)
+console.log("click occurred on", e.target);
+
     let createEventsForm = document.createElement('form')
     let nameLabel = document.createElement('label')
       nameLabel.textContent = 'Event Name'
@@ -19,10 +20,16 @@ $( document ).ready(function(){
     let dateLabel = document.createElement('label')
       dateLabel.textContent = 'Date'
     let dateInput = document.createElement('input')
-    
+
     let locationLabel = document.createElement('label')
       locationLabel.textContent = 'Location'
     let locationInput = document.createElement('input')
+
+    let submit = document.createElement('button')
+      submit.setAttribute('type', 'submit')
+      submit.setAttribute('class', 'btn')
+      submit.setAttribute('id', 'submit')
+      submit.innerHTML = 'Create Event'
 
     createEventsForm.appendChild(nameLabel)
     createEventsForm.appendChild(nameInput)
@@ -32,26 +39,19 @@ $( document ).ready(function(){
     createEventsForm.appendChild(dateInput)
     createEventsForm.appendChild(locationLabel)
     createEventsForm.appendChild(locationInput)
+    createEventsForm.appendChild(submit)
+    // submit.addEventListener()
 
     node.appendChild(createEventsForm)
-
-    // `<form id="events-form">
-    //   <div class="events-form-group">
-    //     <label for="event-name">EVENT NAME</label>
-    //     <input name="name" type="text" class="form-control" id="name" required>
-    //     <label for="time">TIME</label>
-    //     <input name="time" type="text" class="form-control" id="time">
-    //     <label for="date">DATE</label>
-    //     <input name="date" type="text" class="form-control" id="date">
-    //     <label for="where">WHERE</label>
-    //     <input name="where" type="text" class="form-control" id="where">
-    //     <button type="submit" class="btn" id="create-btn">CREATE EVENT</button>
-    //   </div>
-    // </form>`
-// console.log(createForm)
-    // let formSpot = document.createElement("div")
-// console.log("click occurred on", e.target);
+    main.removeChild(createEvent)
 
 
-  })
+
+// let button = document.getElementById('submit')
+// button.addEventListener("click", function(e) {
+// e.preventDefault()
+//   console.log("click occurred on", e.target);
+//
+// })
+})
 })
