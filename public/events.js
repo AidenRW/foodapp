@@ -47,11 +47,11 @@ console.log("click occurred on", e.target);
 
 
 
-// let button = document.getElementById('submit')
-// button.addEventListener("click", function(e) {
-// e.preventDefault()
-//   console.log("click occurred on", e.target);
-//
-// })
+let button = document.getElementById('submit')
+button.addEventListener("click", function(e) {
+e.preventDefault()
+  console.log("click occurred on", e.target);
+
+})
 })
 })
