@@ -2,55 +2,22 @@ nav {
   background-color: #3d545f;
 }
 
-side-nav {
-  background-color: #3d545f;
-}
-
 body {
-  /* background-color: #0f222d; */
   background-image: url("img/mobile-bkgrd.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* .header-logo {
-  background-image: url("img/header.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  height: 40em;
-  width: auto;
-  padding-top: 8em;
-} */
-
-
-#user-icon {
-  width: 8em;
+#ingredients-input-label {
+  font-family: 'Rubik', sans-serif;
 }
 
-#user-body {
-  background-color: #0f222d;
+#username-text {
+  background-color: #3d545f;
 }
 
 .chips-container {
   padding-top: 3em;
   width: 70vw;
   height: 10em;
-}
-
-/* .chip{
-   width: 150px;
-   height: 60px;
-   border-radius: 80px;
-   line-height: 80px;
-   font-size: 2em;
-} */
-
-/* .close {
-  width: 20px;
-  height: 20px;
-} */
-
-#ingredients-input-label {
-  font-family: 'Rubik', sans-serif;
 }

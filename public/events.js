@@ -9,7 +9,11 @@ $( document ).ready(function(){
     closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
     draggable: true, // Choose whether you can drag to open on touch screens,
   });
+//-------------- Load Ongoing Events -----------------//
+  $.get()
+//------------ End Load Ongoing Events ---------------//
 
+// -------------- New Event Creation --------------- //
   let button = document.getElementById('create-event')
   button.addEventListener("click", function(e) {
     e.preventDefault()
@@ -18,12 +22,12 @@ $( document ).ready(function(){
     let timeValue = document.getElementById('time').value
     let dateValue = document.getElementById('date').value
     let locationValue = document.getElementById('location').value
-
-    $.post("/api/events", $('form').serialize())
+    // ---- Post to DB
+    $.post('/api/events', $('form').serialize())
     $('#modal1').modal('close')
 
     let eventsBox = document.getElementById('events-box')
-
+    // ---- Create new event element (popout)
     let newUl = document.createElement('ul')
       newUl.setAttribute("class", "collapsible popout")
       newUl.setAttribute("data-collapsible", "accordion")
@@ -42,4 +46,5 @@ $( document ).ready(function(){
     eventsBox.appendChild(newUl)
     $('.collapsible').collapsible();
   })
+// ------------ End New Event Creation ------------- //
 }) // End Document Ready

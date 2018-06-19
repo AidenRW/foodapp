@@ -2,59 +2,62 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Internal CSS -->
     <link href="events.css" rel="stylesheet">
     <title>Events | MUNCH.</title>
   </head>
-  <body class="main-header">
+
+  <body>
     <nav>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="side-nav teal white-text" id="mobile-demo">
-          <li><a class="white-text teal" href="events.html"><h4>Events</h4></a></li>
-          <li><a class="white-text" href="user.html"><h4>User Profile</h4></a></li>
-          <li><a class="white-text" href="#"><h4>About & FAQ</h4></a></li>
-          <li><a class="white-text" href="#"><h4>Logout</h4></a></li>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="side-nav teal white-text" id="mobile-demo">
+        <li><a class="white-text teal darken-2" href="events.html"><h4>Events</h4></a></li>
+        <li><a class="white-text" href="user.html"><h4>User Profile</h4></a></li>
+        <li><a class="white-text" href="#"><h4>About & FAQ</h4></a></li>
+        <li><a class="white-text" href="#"><h4>Logout</h4></a></li>
       </ul>
     </nav>
 
     <img class="responsive-img" src="img/header.svg">
+    <h1 class="white-text center" id="events-header">Events</h1>
 
 
 
-  <main class="container">
-      <!-- <a class="btn-floating btn-large waves-effect waves-light" id="create-event"><i class="material-icons">add</i></a> -->
-      <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn modal-trigger  grey darken-2" href="#modal1" >CREATE EVENT</a>
+    <main class="container">
+    <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger  teal" href="#modal1"><i class="fas fa-plus-square fa-fw"></i>CREATE EVENT</a>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>New Event Details</h4>
+        <form id="form">
+          <div class="form-group">
 
-      <!-- Modal Structure -->
-      <div id="modal1" class="modal">
-        <div class="modal-content">
-            <h4>Modal Header</h4>
-            <form id="form">
-              <div class="form-group">
+            <label for="name">EVENT NAME</label>
+            <input name="name" type="text" class="form-control" id="name" required>
 
-                <label for="name">EVENT NAME</label>
-                <input name="name" type="text" class="form-control" id="name" required>
+            <label for="time">TIME (24 hour format - HH:MM:SS)</label>
+            <input name="time" type="text" class="form-control" id="time" required>
 
-                <label for="time">TIME</label>
-                <input name="time" type="text" class="form-control" id="time" required>
+            <label for="date">DATE (YYYY-MM-DD)</label>
+            <input name="date" type="text" class="form-control" id="date" required>
 
-                <label for="date">DATE</label>
-                <input name="date" type="text" class="form-control" id="date" required>
+            <label for="location">LOCATION</label>
+            <input name="location" type="text" class="form-control" id="location" required>
 
-                <label for="location">LOCATION</label>
-                <input name="location" type="text" class="form-control" id="location" required>
+            <button type="submit" class="btn" id="create-event"><i class="fas fa-calendar-check fa-fw"></i>CREATE EVENT</button>
 
-                <button type="submit" class="btn" id="create-event">CREATE EVENT</button>
-
-              </div>
-            </form>
-        </div>
+          </div>
+        </form>
       </div>
-
+    </div>
     </main>
 
     <div class="container" id="events-box">
