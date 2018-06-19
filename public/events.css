@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-size: 32px;
 }
@@ -17,11 +18,21 @@ header {
 
 .header-logo {
   background-image: url("img/header.svg");
+=======
+nav {
+  background-color: #3d545f;
+}
+
+.body {
+  font-size: 32px;
+  background-image: url("img/hotdog-bkgrd.svg");
+>>>>>>> 2f8f9a2aa957d12dc0a47dea2f116bcd6a0594b4
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .main-header {
+<<<<<<< HEAD
     background-image: url("img/mobile-bkgrd.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,3 +49,12 @@ header {
   #create-event {
     background-color: #3d545f;
   }
+=======
+  background-image: url("img/mobile-bkgrd.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #193944; */
+  /* border-color: #08222e;
+  border-width: medium; */
+}
+>>>>>>> 2f8f9a2aa957d12dc0a47dea2f116bcd6a0594b4
