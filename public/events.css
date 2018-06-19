@@ -1,0 +1,19 @@
+nav {
+  background-color: #3d545f;
+}
+
+.body {
+  font-size: 32px;
+  background-image: url("img/hotdog-bkgrd.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-header {
+  background-image: url("img/mobile-bkgrd.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #193944; */
+  /* border-color: #08222e;
+  border-width: medium; */
+}
