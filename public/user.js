@@ -6,4 +6,24 @@ $( document ).ready(function(){
     draggable: true, // Choose whether you can drag to open on touch screens,
   });
 
+  $('.chips').material_chip();
+  $('.chips-initial').material_chip({
+    data: [{
+    }],
+  });
+  $('.chips-placeholder').material_chip({
+    placeholder: 'New ingredient',
+    secondaryPlaceholder: '+Tag',
+  });
+  $('.chips-autocomplete').material_chip({
+    autocompleteOptions: {
+      data: {
+
+      },
+      limit: Infinity,
+      minLength: 0
+    }
+  });
+
+
 }) // End Document Ready
