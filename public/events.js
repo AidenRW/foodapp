@@ -1,9 +1,15 @@
 $( document ).ready(function(){
-  let body = document.getElementsByClassName('main')
-  console.log(body)
+  let join = document.getElementById('join')
+  console.log(join)
 
-  .addEventListener("click", function(e) {
-    e.preventDefault();
+  join.addEventListener("click", function(e) {
+    e.preventDefault()
+
+    console.log("click occurred on", e.target);
+
+    
+
+
 
   })
 })
