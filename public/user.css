@@ -16,7 +16,7 @@ nav, side-nav {
 
 body {
   /* background-color: #0f222d; */
-  background-image: url("img/hotdog-bkgrd.svg");
+  background-image: url("img/mobile-bkgrd.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -27,6 +27,11 @@ body {
 
 #user-body {
   background-color: #0f222d;
+}
+
+.chips-container {
+  padding-top: 3em;
+  width: 70vw;
 }
 
 /* .page {
