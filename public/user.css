@@ -15,9 +15,22 @@ nav, side-nav {
 }
 
 body {
-  background-color: #0f222d;
+  /* background-color: #0f222d; */
+  background-image: url("img/hotdog-bkgrd.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #user-icon {
   width: 8em;
 }
+
+#user-body {
+  background-color: #0f222d;
+}
+
+/* .page {
+  background-image: url("img/hotdog-bkgrd.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
