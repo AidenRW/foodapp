@@ -13,7 +13,7 @@ body {
   background-size: cover;
 }
 
-.header-logo {
+/* .header-logo {
   background-image: url("img/header.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +21,7 @@ body {
   height: 40em;
   width: auto;
   padding-top: 8em;
-}
+} */
 
 
 #user-icon {
@@ -39,11 +39,16 @@ body {
 }
 
 .chip{
-   width: 240px;
-   height: 80px;
+   width: 150px;
+   height: 40px;
    border-radius: 80px;
    line-height: 80px;
-   font-size: 4em;
+   font-size: 2em;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
 }
 
 #ingredients-input-label {
