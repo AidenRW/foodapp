@@ -2,28 +2,44 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="events.css" rel="stylesheet">
+    <title>Events page</title>
   </head>
-  <body>
+  <body class="main-header">
     <nav>
-      <div class="nav-wrapper">
-        <a href="#!"  class="brand-logo responsive-img">logo
-        </a>
-
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-      </div>
+        <ul class="side-nav teal white-text" id="mobile-demo">
+          <li><a class="white-text teal" href="events.html"><h4>Events</h4></a></li>
+          <li><a class="white-text" href="user.html"><h4>User Profile</h4></a></li>
+          <li><a class="white-text" href="#"><h4>About & FAQ</h4></a></li>
+          <li><a class="white-text" href="#"><h4>Logout</h4></a></li>
+      </ul>
     </nav>
+
+    <img class="responsive-img" src="img/header.svg">
+
+
+
+    <main class="container" id="create-button">
+      <a class="btn-floating btn-large waves-effect waves-light" id="create-event"><i class="material-icons">add</i></a>
+
+      <div id="events-box">
+      </div>
+    </main>
+
+    <footer>
+    </footer>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="events.js"></script>
   </body>
 </html>

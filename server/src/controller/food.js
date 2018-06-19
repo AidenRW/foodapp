@@ -1,8 +1,10 @@
 const model = require('../model/food.js')
 
 function getAll(req, res, next) {
-    const data = model.getAll()
-    res.status(200).json({data})
+    model.getAll()
+      .then(result => {
+        res.redirect('http://google.com')
+      })
 }
 
 //this function should take form input and send it to the database.
@@ -10,8 +12,8 @@ function userLogin (req, res, next) {
 
 }
 
-function userSignup () {
-
+function userSignup (req, res, next) {
+  res.redirect('/events.html')
 }
 
 function userInfo () {

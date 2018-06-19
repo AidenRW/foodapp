@@ -1,0 +1,37 @@
+
+body {
+  font-size: 32px;
+  background-image: url("img/mobile-bkgrd.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  height: 20em;
+  width: auto;
+}
+
+nav {
+  background-color: #3d545f;
+}
+
+#submit {
+  background-color: #3d545f;
+}
+
+#create-event {
+  background-color: #3d545f;
+}
+
+.svg-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.header-logo {
+  background-image: url("img/header.svg");

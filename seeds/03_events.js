@@ -5,9 +5,9 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('events').insert([
-        {id: 1, location: 'Downtown', date_time: {new Date('1997-12-17 07:37:16-08') }, host_id: 1},
-        {id: 2, location: 'Roof', date_time: { new Date('2000-12-17 07:37:16-08') }, host_id: 2},
-        {id: 3, location: 'Pool', date_time: { new Date('2100-12-17 07:37:16-08') }, host_id: 3}
+        {id: 1, location: 'Downtown', date_time: '1997-12-17 07:37:16-08', host_id: 1},
+        {id: 2, location: 'Roof', date_time: '2000-12-17 07:37:16-08', host_id: 2},
+        {id: 3, location: 'Pool', date_time: '2100-12-17 07:37:16-08', host_id: 3}
       ])
     }).then(() => {
       return knex.raw(

@@ -4,7 +4,10 @@ const ctrl = require('../controller/food.js')
 
 router.get('/api', ctrl.getAll)
 // POST api/login (user login)
-router.post('/api/login', ctrl.userLogin)
+router.post('/hello', (req, res, nex) => {
+  console.log("hello from /hello");
+  res.redirect('/events.html')
+})
 
 // POST api/signup (user creation)
 router.post('/api/signup', ctrl.userSignup)

@@ -2,7 +2,7 @@
 Allows users to collaborate and share ingredients for an event and receive automated recipe ideas that prioritize on-hand ingredients.  Users will also receive a shopping list of items that will need to be purchased to complete the recipe.
 
 # Entity-Relationship Diagram
-![Example](/images/Food_App_ERD_v2.0.jpg)
+![Example](/public/img/Food_App_ERD_v2.0.jpg)
 
 # Server Routes Planning
 
@@ -25,11 +25,11 @@ Allows users to collaborate and share ingredients for an event and receive autom
 `POST api/getrecipe (send ingredients to spoonacular API)`
 
 # App Wireframe (Adobe XD)
-![Example](/images/wireframe.png)
+![Example](/public/img/wireframe.png)
 
 # Style Guide
-![Example](/images/colors.png)
-![Example](/images/fonts.png)
+![Example](/public/img/colors.png)
+![Example](/public/img/fonts.png)
 
 # Trello Planning
 https://trello.com/b/PeqRQMHT/food-app
