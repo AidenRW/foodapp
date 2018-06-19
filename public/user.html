@@ -16,13 +16,21 @@
 
   <body>
     <nav>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="side-nav teal white-text" id="mobile-demo">
-        <li><a class="white-text" href="events.html"><h4>Events</h4></a></li>
-        <li><a class="white-text teal darken-2" href="user.html"><h4>User Profile</h4></a></li>
-        <li><a class="white-text" href="#"><h4>About & FAQ</h4></a></li>
-        <li><a class="white-text" href="#"><h4>Logout</h4></a></li>
-      </ul>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="white-text" href="events.html"><h4>Events</h4></a></li>
+          <li><a class="white-text teal darken-2" href="user.html"><h4>User Profile</h4></a></li>
+          <li><a class="white-text" href="#"><h4>About & FAQ</h4></a></li>
+          <li><a class="white-text" href="#"><h4>Logout</h4></a></li>
+        </ul>
+        <ul class="side-nav teal white-text" id="mobile-demo">
+          <li><a class="white-text teal darken-2" href="events.html"><h4>Events</h4></a></li>
+          <li><a class="white-text" href="user.html"><h4>User Profile</h4></a></li>
+          <li><a class="white-text" href="#"><h4>About & FAQ</h4></a></li>
+          <li><a class="white-text" href="#"><h4>Logout</h4></a></li>
+        </ul>
+      </div>
     </nav>
 
     <img class="responsive-img" src="img/header.svg">
@@ -30,7 +38,7 @@
     <h1 class="white-text center" id="username-text">Benjamin's Profile</h1>
 
     <h4 class="white-text center" id="ingredients-input-label">Enter your on-hand ingredients below:</h4>
-    
+
     <div class="chips-container container white-text">
       <div class="chips chips-placeholder white-text"></div>
     </div>
