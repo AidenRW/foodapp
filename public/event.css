@@ -1,0 +1,49 @@
+
+
+.header-logo {
+  background-image: url("img/header.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 40em;
+  width: auto;
+  padding-top: 8em;
+}
+
+nav, side-nav {
+  background-color: #3d545f;
+}
+
+body {
+  /* background-color: #0f222d; */
+  background-image: url("img/mobile-bkgrd.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#user-body {
+  /* background-color: #0f222d; */
+}
+
+#user-icon {
+  width: 400px;
+  height: 400px;
+  padding-left: 40%;
+  background-image: url("icons/bird.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #fff; */
+}
+
+.chips-container {
+  padding-top: 3em;
+  width: 70vw;
+}
+h3{
+  font-size: 25px;
+}
+/* .page {
+  background-image: url("img/hotdog-bkgrd.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
