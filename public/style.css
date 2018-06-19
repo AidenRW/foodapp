@@ -9,13 +9,14 @@ font-family: 'Abril Fatface', cursive; */
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* for events, event, and user */
 header {
   text-align: center;
   height: 36em;
   width: auto;
 
 }
+
 #landing-page {
   padding-top: 8em;
 }
@@ -35,10 +36,6 @@ header {
   background-size: cover;
 }
 
-#events-box {
-
-}
-
 .logo {
   padding-top: 3em;
   padding-left: 3em;
@@ -46,7 +43,10 @@ header {
 }
 
 .main {
-  background-color: #193944;
+  background-image: url("img/mobile-bkgrd.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #193944; */
   /* border-color: #08222e;
   border-width: medium; */
 }
