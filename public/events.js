@@ -15,21 +15,19 @@ $( document ).ready(function(){
     // console.log(createEvent);
     button.addEventListener("click", function(e) {
       e.preventDefault()
-      let nameValue = document.getElementById('name').value
-      let timeValue = document.getElementById('time').value
-      let dateValue = document.getElementById('date').value
-      let locationValue = document.getElementById('location').value
+      $.post("/api/events", $('form').serialize())
+        .then(result => {
+          console.log(result);
+        })
+      // let nameValue = document.getElementById('name').value
+      // let timeValue = document.getElementById('time').value
+      // let dateValue = document.getElementById('date').value
+      // let locationValue = document.getElementById('location').value
+      //
+      // let payload = {name: nameValue,
+      // time: timeValue, date: dateValue, location: locationValue}
 
-      let payload = {name: nameValue,
-      time: timeValue, date: dateValue, location: locationValue}
-
-    console.log(payload)
-    $.post('/api/events', function(payload) {
-      console.log(payload)
-    })
 
 
-// console.log("click occurred on", e.target);
-// })
 })
 })
