@@ -13,34 +13,38 @@ function userLogin (req, res, next) {
 }
 
 function userSignup (req, res, next) {
-  res.redirect('/events.html')
-}
-
-function userInfo () {
 
 }
 
-function addIngredient () {
+function userInfo (req, res, next) {
 
 }
 
-function deleteIngredient () {
+function addIngredient (req, res, next) {
 
 }
 
-function createEvent () {
+function deleteIngredient (req, res, next) {
 
 }
 
-function eventInfo () {
+function createEvent (req, res, next) {
+  console.log(req.body.name, req.body.time, req.body.date, req.body.location);
+  model.createEvent(req.body.name, req.body.time, req.body.date, req.body.location)
+    .then(result => {
+      console.log(result);
+    })
+}
+
+function eventInfo (req, res, next) {
 
 }
 
-function updateEvent () {
+function updateEvent (req, res, next) {
 
 }
 
-function getRecipe () {
+function getRecipe (req, res, next) {
 
 }
 

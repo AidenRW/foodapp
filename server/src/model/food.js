@@ -1,4 +1,3 @@
-
 const knex = require('../../../knex')
 
 function getAll() {
@@ -28,8 +27,9 @@ function deleteIngredient () {
 
 }
 
-function createEvent () {
-
+function createEvent (name, time, date, location) {
+  return knex('events')
+    .insert({ event_name: name, location: location, date: date, time: time, host_id: 1})
 }
 
 function eventInfo () {
