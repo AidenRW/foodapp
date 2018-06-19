@@ -6,6 +6,7 @@ const bodyParser = require('body-parser')
 
 app.disable('x-powered-by')
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
 
 const routes = require('./server/src/routes/food.js')
 
