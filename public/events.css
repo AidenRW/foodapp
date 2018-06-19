@@ -35,3 +35,12 @@ nav {
 
 .header-logo {
   background-image: url("img/header.svg");
+}
+
+.collapsible-header {
+  background-color: #3d545f;
+}
+
+.collapsible-body {
+  background-color: #3d545f;
+}
