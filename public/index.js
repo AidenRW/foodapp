@@ -15,8 +15,12 @@ $( document ).ready(function(){
     let payload = { email: email, password: password }
 
     $.post('/api/login', payload)
-      .then(result => {
+      .done(result => {
+        console.log('.then')
         window.location.href = 'events.html'
+      })
+      .fail(result => {
+        console.log(result)
       })
 
   })
