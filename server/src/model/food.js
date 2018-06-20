@@ -1,12 +1,5 @@
 const knex = require('../../../knex')
 
-function getAll() {
-  return knex('users')
-    .then(result => {
-      return result;
-    })
-}
-
 function userLogin () {
 
 }
@@ -32,6 +25,13 @@ function createEvent (name, time, date, location) {
     .insert({ event_name: name, location: location, date: date, time: time, host_id: 1})
 }
 
+function allEvents () {
+  return knex('events')
+    .then(result => {
+      console.log(result);
+    })
+}
+
 function eventInfo () {
 
 }
@@ -45,13 +45,13 @@ function getRecipe () {
 }
 
 module.exports = {
-  getAll,
   userLogin,
   userSignup,
   userInfo,
   addIngredient,
   deleteIngredient,
   createEvent,
+  allEvents,
   eventInfo,
   updateEvent,
   getRecipe
