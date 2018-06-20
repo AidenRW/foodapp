@@ -12,6 +12,9 @@ $( document ).ready(function(){
   });
 //-------------- Load Ongoing Events -----------------//
   $.get('/api/events', function(data) {
+<<<<<<< HEAD
+    for(let elem of data)
+=======
 
     
 
@@ -20,6 +23,7 @@ $( document ).ready(function(){
 
     }
 
+>>>>>>> b628679ee7dca36438e47a43592a5a1f02acdac5
   })
 //------------ End Load Ongoing Events ---------------//
 
