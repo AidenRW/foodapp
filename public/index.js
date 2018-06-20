@@ -4,18 +4,18 @@ $( document ).ready(function(){
 let name = document.getElementById("name")
 let email = document.getElementById("email")
 let password = document.getElementById("password")
-let launch = document.getElementById("launch")
+let login = document.getElementById("login")
 
 
 
 //need to get the input info from the login form and send data to database.
-launch.addEventListener("click", function(e) {
+login.addEventListener("click", function(e) {
   e.preventDefault();
 
   let emailToStore = email.value
   let nameToStore = name.value
 
-  $.post('http://localhost:3000/hello')
+  $.post('/api/login')
 })
 
 
