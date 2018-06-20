@@ -2,7 +2,6 @@ $( document ).ready(function(){
 
   $('.modal').modal();
 
-
   $(".button-collapse").sideNav({
     menuWidth: 300, // Default is 300
     edge: 'left', // Choose the horizontal origin
@@ -10,22 +9,24 @@ $( document ).ready(function(){
     draggable: true, // Choose whether you can drag to open on touch screens,
   });
 //-------------- Load Ongoing Events -----------------//
-  $.get()
+  $.get('/api/events', function(data) {
+    return data
+  })
 //------------ End Load Ongoing Events ---------------//
 
 // -------------- New Event Creation --------------- //
   let button = document.getElementById('create-event')
   button.addEventListener("click", function(e) {
     e.preventDefault()
-
+    // ---- Storing event input values
     let nameValue = document.getElementById('name').value
     let timeValue = document.getElementById('time').value
     let dateValue = document.getElementById('date').value
     let locationValue = document.getElementById('location').value
-    // ---- Post to DB
+    // ---- Post to DB & close modal
     $.post('/api/events', $('form').serialize())
     $('#modal1').modal('close')
-
+    // ---- Store event box div
     let eventsBox = document.getElementById('events-box')
     // ---- Create new event element (popout)
     let newUl = document.createElement('ul')
@@ -39,7 +40,7 @@ $( document ).ready(function(){
       newDiv2.setAttribute("class", "collapsible-body")
       newDiv2.innerHTML = `<span>Location: ${locationValue} | Time: ${timeValue} | Date: ${dateValue}</span>`
       newDiv2.setAttribute("class", "collapsible-header")
-
+    // ---- Append new event element (popout)
     newLi.appendChild(newDiv1)
     newLi.appendChild(newDiv2)
     newUl.appendChild(newLi)

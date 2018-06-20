@@ -2,12 +2,8 @@ const express = require('express')
 const router = express.Router()
 const ctrl = require('../controller/food.js')
 
-router.get('/api', ctrl.getAll)
 // POST api/login (user login)
-router.post('/hello', (req, res, nex) => {
-  console.log("hello from /hello");
-  res.redirect('/events.html')
-})
+router.post('/api/login', ctrl.userLogin)
 
 // POST api/signup (user creation)
 router.post('/api/signup', ctrl.userSignup)
@@ -21,8 +17,11 @@ router.post('/api/users/:id/ingredients', ctrl.addIngredient)
 // DELETE api/users/:id/ingredients/:ing_id (delete ingredient)
 router.delete('/api/users/:id/ingredients/:ing_id', ctrl.deleteIngredient)
 
-// POST api/events (create event)
+// POST api/events (create event) *** [FUNCTIONING AS INTENDED]
 router.post('/api/events', ctrl.createEvent)
+
+// GET api/events (retrieve all event data)
+router.get('/api/events', ctrl.allEvents)
 
 // GET api/events/:id (retrieve event data — i.e. users, ingredients, time, location)
 router.get('/api/events/:id', ctrl.eventInfo)
