@@ -13,8 +13,6 @@ $( document ).ready(function(){
 //-------------- Load Ongoing Events -----------------//
   $.get('/api/events', function(data) {
 
-    console.log("hello");
-
     for (let i = 0; i < data.length; i++) {
       let nameValue = data[i].event_name
       let timeValue = data[i].time

@@ -5,13 +5,18 @@ require('dotenv').config()
 
 
 function userLogin (req, res, next) {
-  const data = model.userLogin(req.body.email, req.body.password)
-
-  if (data.errors) {
-    res.status(400).send(data.errors)
+  if (!req.body.email || !req.body.password) {
+    res.status(400).send('Must have email & password.')
   } else {
-    res.cookie('jwt', data)
-    res.redirect('/events.html')
+    model.userLogin(req.body.email, req.body.password)
+    .then(result => {
+      if (result.errors) {
+        res.status(400).send(result.errors)
+      } else {
+        res.cookie('jwt', result)
+        res.redirect('/events.html')
+      }
+    })
   }
 }
 

@@ -6,8 +6,6 @@ require('dotenv').config()
 function userLogin (email, password) {
   let errors = []
   let response
-
-  if (email && password) {
     return knex('users')
       .where('email', email)
       .then((result) => {
@@ -27,12 +25,8 @@ function userLogin (email, password) {
           errors.push('Invalid Password')
           response = { errors }
         }
+        return response
       })
-  }
-  else {
-    errors.push('Must have email and password')
-    response = { errors }
-  }
 }
 
 function userSignup () {
