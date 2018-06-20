@@ -24,14 +24,13 @@ function deleteIngredient (req, res, next) {
 function createEvent (req, res, next) {
   model.createEvent(req.body.name, req.body.time, req.body.date, req.body.location)
     .then(result => {
-    
     })
 }
 
 function allEvents (req, res, next) {
-  return model.allEvents()
+  model.allEvents()
     .then(result => {
-      return result
+      res.send(result)
     })
 }
 
