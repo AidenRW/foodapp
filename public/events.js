@@ -10,6 +10,7 @@ $( document ).ready(function(){
   });
 //-------------- Load Ongoing Events -----------------//
   $.get('/api/events', function(data) {
+    
     return data
   })
 //------------ End Load Ongoing Events ---------------//
