@@ -10,9 +10,14 @@ $( document ).ready(function(){
   });
 //-------------- Load Ongoing Events -----------------//
   $.get('/api/events', function(data) {
+
+    
+
+
     for (let elem of data) {
       
     }
+
   })
 //------------ End Load Ongoing Events ---------------//
 
