@@ -1,8 +1,18 @@
 const model = require('../model/food.js')
+const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
+require('dotenv').config()
 
 
 function userLogin (req, res, next) {
+  const data = model.userLogin(req.body.email, req.body.password)
 
+  if (data.errors) {
+    res.status(400).send(data.errors)
+  } else {
+    res.cookie('jwt', data)
+    res.redirect('/events.html')
+  }
 }
 
 function userSignup (req, res, next) {

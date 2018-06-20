@@ -23,13 +23,11 @@ h1{
   background: linear-gradient(#08222e, #3d545f)
 }
 
-/* .chips-placeholder {
-  color: white;
+#save-button {
+  margin-top: 1em;
+  letter-spacing: 3px;
+  font-weight: lighter;
 }
-
-input {
-  color: white;
-} */
 
 #ingredients-input-label {
   font-family: 'Rubik', sans-serif;
