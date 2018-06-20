@@ -2,6 +2,8 @@ $( document ).ready(function(){
 
   $('.modal').modal();
 
+  $('.collapsible').collapsible();
+
   $(".button-collapse").sideNav({
     menuWidth: 300, // Default is 300
     edge: 'left', // Choose the horizontal origin
@@ -15,7 +17,7 @@ $( document ).ready(function(){
 
 
     for (let elem of data) {
-      
+
     }
 
   })
