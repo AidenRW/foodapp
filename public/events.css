@@ -9,16 +9,27 @@ nav {
   background-color: #3d545f;
 }
 
-.create-event {
-  background-color: #3d545f;
-}
+/* .below-logo{
+  padding-left: 12em;
+  width: 5em;
+} */
+
+/* #center-btn {
+  text-align: center;
+} */
 
 h1 {
+  letter-spacing: 3px;
+  font-weight: lighter;
   color:#9fecf4;
 }
 
 #events-header {
   background-color: #08222e;
+}
+
+.create-event {
+  background-color: #3d545f;
 }
 
 .collapsible-header {
