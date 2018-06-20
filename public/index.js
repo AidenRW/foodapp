@@ -1,23 +1,26 @@
 $( document ).ready(function(){
+
   $(".button-collapse").sideNav();
 
-let name = document.getElementById("name")
-let email = document.getElementById("email")
-let password = document.getElementById("password")
-let login = document.getElementById("login")
+  let login = document.getElementById("login")
 
 
 
 //need to get the input info from the login form and send data to database.
-login.addEventListener("click", function(e) {
-  e.preventDefault();
+  login.addEventListener("click", function(e) {
+    e.preventDefault();
 
-  let emailToStore = email.value
-  let nameToStore = name.value
+    let email = document.getElementById("email").value
+    let password = document.getElementById("password").value
+    let payload = { email: email, password: password }
 
-  $.post('/api/login')
-})
+    $.post('/api/login', payload)
+      .then(result => {
+        window.location.href = 'events.html'
+      })
+
+  })
 
 
 
-})
+}) // End Document Ready
