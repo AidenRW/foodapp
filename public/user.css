@@ -1,5 +1,7 @@
 nav {
   background-color: #3d545f;
+  letter-spacing: 3px;
+  font-weight: lighter;
 }
 
 body {
@@ -7,21 +9,35 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 h1{
   color:#9fecf4;
   background-color: #08222e;
 }
 
-#ingredients-input-label {
-  font-family: 'Rubik', sans-serif;
-}
-
-/* #username-text {
-  background-color: #3d545f;
-} */
 
 .chips-container {
   padding-top: 3em;
   width: 70vw;
   height: 10em;
+  background: linear-gradient(#08222e, #3d545f)
+}
+
+/* .chips-placeholder {
+  color: white;
+}
+
+input {
+  color: white;
+} */
+
+#ingredients-input-label {
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+#username-text {
+  letter-spacing: 3px;
+  font-weight: lighter;
 }
