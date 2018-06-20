@@ -7,22 +7,32 @@ body {
 
 nav {
   background-color: #3d545f;
+  letter-spacing: 3px;
+  font-weight: lighter;
 }
 
 /* .below-logo{
   padding-left: 12em;
   width: 5em;
 } */
-
-/* #center-btn {
-  text-align: center;
-} */
-
 h1 {
   letter-spacing: 3px;
   font-weight: lighter;
   color:#9fecf4;
 }
+
+span {
+  color: white;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+#center-btn {
+  margin-bottom: 1em;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
 
 #events-header {
   background-color: #08222e;
@@ -33,9 +43,14 @@ h1 {
 }
 
 .collapsible-header {
-  background-color: #3d545f;
+  background-color: #436575;
 }
 
 .collapsible-body {
-  background-color: #3d545f;
+  background: linear-gradient(#08222e, #3d545f)
+}
+
+.event-link {
+  letter-spacing: 3px;
+  font-weight: lighter;
 }
