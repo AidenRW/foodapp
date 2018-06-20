@@ -16,7 +16,6 @@ $( document ).ready(function(){
 
     $.post('/api/login', payload)
       .done(result => {
-        console.log('.then')
         window.location.href = 'events.html'
       })
       .fail(result => {
