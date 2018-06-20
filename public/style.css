@@ -11,10 +11,6 @@ header {
   width: auto;
 }
 
-/* #logo-container {
-  padding-top: 8em;
-} */
-
 #main-container {
   padding-top: 20em;
   line-height: 100%;
@@ -35,7 +31,7 @@ header {
 	overflow: hidden;
 }
 
-.logo {
+#logo {
   padding-top: 15em;
   padding-left: 3em;
   padding-right: 3em;

@@ -28,7 +28,7 @@ function createEvent (name, time, date, location) {
 function allEvents () {
   return knex('events')
     .then(result => {
-      console.log(result);
+      return result
     })
 }
 
