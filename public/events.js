@@ -12,8 +12,35 @@ $( document ).ready(function(){
   });
 //-------------- Load Ongoing Events -----------------//
   $.get('/api/events', function(data) {
+<<<<<<< HEAD
+=======
+    console.log("hello");
+>>>>>>> 27e5aaaca803d7da4cd38671657afaa519dd7d81
     for (let elem of data) {
-
+      let nameValue = elem.event_name
+      let timeValue = elem.time
+      let dateValue = elem.date
+      let locationValue = elem.location
+      // ---- Store event box div
+      let eventsBox = document.getElementById('events-box')
+      // ---- Create new event element (popout)
+      let newUl = document.createElement('ul')
+        newUl.setAttribute("class", "collapsible popout")
+        newUl.setAttribute("data-collapsible", "accordion")
+      let newLi = document.createElement('li')
+      let newDiv1 = document.createElement('div')
+        newDiv1.setAttribute("class", "collapsible-header")
+        newDiv1.innerHTML = `<i class='material-icons'>filter_drama</i>${nameValue}`
+      let newDiv2 = document.createElement('div')
+        newDiv2.setAttribute("class", "collapsible-body")
+        newDiv2.innerHTML = `<span>Location: ${locationValue} | Time: ${timeValue} | Date: ${dateValue}</span>`
+        newDiv2.setAttribute("class", "collapsible-header")
+      // ---- Append new event element (popout)
+      newLi.appendChild(newDiv1)
+      newLi.appendChild(newDiv2)
+      newUl.appendChild(newLi)
+      eventsBox.appendChild(newUl)
+      $('.collapsible').collapsible();
     }
   })
 //------------ End Load Ongoing Events ---------------//
