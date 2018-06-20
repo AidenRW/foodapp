@@ -9,16 +9,16 @@ nav {
   background-color: #3d545f;
 }
 
-#create-event {
+.create-event {
   background-color: #3d545f;
+}
+
+h1 {
+  color:#9fecf4;
 }
 
 #events-header {
-  background-color: #3d545f;
-}
-
-.header-logo {
-  background-image: url("img/header.svg");
+  background-color: #08222e;
 }
 
 .collapsible-header {
