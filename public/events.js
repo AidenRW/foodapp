@@ -15,11 +15,12 @@ $( document ).ready(function(){
 
     console.log("hello");
 
-    for (let elem of data) {
-      let nameValue = elem.event_name
-      let timeValue = elem.time
-      let dateValue = elem.date
-      let locationValue = elem.location
+    for (let i = 0; i < data.length; i++) {
+      let nameValue = data[i].event_name
+      let timeValue = data[i].time
+      let dateValue = data[i].date.slice(0, data[i].date.indexOf('T'))
+      let locationValue = data[i].location
+      let event_id = data[i].id
       // ---- Store event box div
       let eventsBox = document.getElementById('events-box')
       // ---- Create new event element (popout)
@@ -29,7 +30,7 @@ $( document ).ready(function(){
       let newLi = document.createElement('li')
       let newDiv1 = document.createElement('div')
         newDiv1.setAttribute("class", "collapsible-header")
-        newDiv1.innerHTML = `<i class='material-icons'>filter_drama</i>${nameValue}`
+        newDiv1.innerHTML = `<i class='material-icons'>filter_drama</i><a class="event-link" href="event.html">${nameValue}</a>`
       let newDiv2 = document.createElement('div')
         newDiv2.setAttribute("class", "collapsible-body")
         newDiv2.innerHTML = `<span>Location: ${locationValue} | Time: ${timeValue} | Date: ${dateValue}</span>`
@@ -38,6 +39,10 @@ $( document ).ready(function(){
       newLi.appendChild(newDiv2)
       newUl.appendChild(newLi)
       eventsBox.appendChild(newUl)
+      let eventLink = document.getElementsByClassName('event-link')[i]
+      eventLink.addEventListener('click', function () {
+        localStorage.setItem('event_id', JSON.stringify(event_id))
+      })
       $('.collapsible').collapsible();
     }
   })
@@ -64,7 +69,7 @@ $( document ).ready(function(){
     let newLi = document.createElement('li')
     let newDiv1 = document.createElement('div')
       newDiv1.setAttribute("class", "collapsible-header")
-      newDiv1.innerHTML = `<i class='material-icons'>filter_drama</i>${nameValue}`
+      newDiv1.innerHTML = `<i class='material-icons'>filter_drama</i><a class="event-link" href="event.html">${nameValue}</a>`
     let newDiv2 = document.createElement('div')
       newDiv2.setAttribute("class", "collapsible-body")
       newDiv2.innerHTML = `<span>Location: ${locationValue} | Time: ${timeValue} | Date: ${dateValue}</span>`
@@ -74,6 +79,7 @@ $( document ).ready(function(){
     newLi.appendChild(newDiv2)
     newUl.appendChild(newLi)
     eventsBox.appendChild(newUl)
+    let eventLink = document.getElementById('event-link')
     $('.collapsible').collapsible();
   })
 // ------------ End New Event Creation ------------- //
