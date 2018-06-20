@@ -39,8 +39,6 @@ $( document ).ready(function(){
       eventsBox.appendChild(newUl)
       $('.collapsible').collapsible();
     }
-
->>>>>>> b628679ee7dca36438e47a43592a5a1f02acdac5
   })
 //------------ End Load Ongoing Events ---------------//
 
