@@ -12,7 +12,7 @@ $( document ).ready(function(){
   });
 //-------------- Load Ongoing Events -----------------//
   $.get('/api/events', function(data) {
-    console.log(data);
+    console.log("hello");
     for (let elem of data) {
       let nameValue = elem.event_name
       let timeValue = elem.time
