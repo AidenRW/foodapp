@@ -13,8 +13,6 @@ $( document ).ready(function(){
 //-------------- Load Ongoing Events -----------------//
   $.get('/api/events', function(data) {
 
-    console.log("hello");
-
     for (let i = 0; i < data.length; i++) {
       let nameValue = data[i].event_name
       let timeValue = data[i].time
@@ -73,7 +71,6 @@ $( document ).ready(function(){
     let newDiv2 = document.createElement('div')
       newDiv2.setAttribute("class", "collapsible-body")
       newDiv2.innerHTML = `<span>Location: ${locationValue}<br>Time: ${timeValue}<br>Date: ${dateValue}</span>`
-      newDiv2.setAttribute("class", "collapsible-header")
     // ---- Append new event element (popout)
     newLi.appendChild(newDiv1)
     newLi.appendChild(newDiv2)

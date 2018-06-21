@@ -1,7 +1,32 @@
 const knex = require('../../../knex')
+const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
+require('dotenv').config()
 
-function userLogin () {
-
+function userLogin (email, password) {
+  let errors = []
+  let response
+    return knex('users')
+      .where('email', email)
+      .then((result) => {
+        if (result.length !== 1) {
+          errors.push('No Existing User')
+          response = { errors }
+        }
+        else if (bcrypt.compareSync(password, result[0].password)) {
+          const payload = {
+            email: email,
+            userId: result[0].id
+          }
+          const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '30m' })
+          return token
+        }
+        else {
+          errors.push('Invalid Password')
+          response = { errors }
+        }
+        return response
+      })
 }
 
 function userSignup () {
