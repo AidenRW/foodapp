@@ -23,27 +23,29 @@ $( document ).ready(function(){
     .fail(result => {
       console.log(result);
     })
-
-
+  // ---- Retrieving event_users data
+  $.get(`/api/events/${id}/users`)
+    .done(result => {
+      const userArray = result[0].userArray
+      // ---- Populate attending users & associated ingredients
+      for (let i = 0; i < userArray.length; i++) {
+        $.get(`/api/users/${userArray[i].user_id}/ingredients`)
+        .done(result => {
+          let ingredientsString = ''
+          for (let elem of result) {
+            for (let inner of elem.id) {
+              ingredientsString += `${inner.name} `
+            }
+          }
+          $('#users-list').append(`<li><div class="collapsible-header text-center"><i class="far fa-user"></i>${userArray[i].username}</div><div class="collapsible-body center"><span>${ingredientsString}</span></div></li>`)
+        })
+        .fail(result => {
+          console.log('.fail result: ', result);
+        })
+      }
+    })
+    .fail(result => {
+      console.log('.fail result: ', result);
+    })
 
 }) // End Document Ready
-
-
-// var username = "Ben"
-// var ingredients = "flour, corn, butter"
-// function myFunction() {
-//   document.getElementById("name").innerHTML = "Hello World"
-// }
-// function picture() {
-//   $("#user-icon").css("background-image", "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw2V9SJwM3b4RpH7Si6PiqJpNGOmxt6252imu0O7uXPc_1d1zt)")
-// }
-// function users() {
-//   document.getElementById("demo").append(username + ": " + ingredients)
-// }
-// function inscructions() {
-//   document.getElementById("instructions").innerHTML = "yeppo"
-// }
-// inscructions()
-// myFunction()
-// picture()
-// users()

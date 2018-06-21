@@ -67,6 +67,13 @@ function eventInfo (req, res, next) {
     })
 }
 
+function eventUsers (req, res, next) {
+  model.eventUsers(req.params.id)
+    .then(result => {
+      res.send(result)
+    })
+}
+
 function updateEvent (req, res, next) {
 
 }
@@ -85,6 +92,7 @@ module.exports = {
   createEvent,
   allEvents,
   eventInfo,
+  eventUsers,
   updateEvent,
   getRecipe
 }

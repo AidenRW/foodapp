@@ -20,12 +20,26 @@ span {
   color:#9fecf4;
 }
 
+.collapsible-header {
+  background-color: #08222e;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: lighter;
+
+}
+
 #event-content {
   margin-top: 20em;
   background: linear-gradient(#08222e, #3d545f);
 }
 
 #event-name {
+  letter-spacing: 3px;
+  font-weight: lighter;
+  color: white;
+}
+
+#users-list-text {
   letter-spacing: 3px;
   font-weight: lighter;
   color: white;
