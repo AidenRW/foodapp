@@ -25,7 +25,17 @@ function userSignup (req, res, next) {
 }
 
 function userInfo (req, res, next) {
+  model.userInfo(req.params.id)
+    .then(result => {
+      res.send(result)
+    })
+}
 
+function allIngredients (req, res, next) {
+  model.allIngredients(req.params.id)
+    .then(result => {
+      res.send(result)
+    })
 }
 
 function addIngredient (req, res, next) {
@@ -66,6 +76,7 @@ module.exports = {
   userLogin,
   userSignup,
   userInfo,
+  allIngredients,
   addIngredient,
   deleteIngredient,
   createEvent,

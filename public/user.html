@@ -37,16 +37,22 @@
 
     <img class="responsive-img" src="img/header.svg">
 
-    <h1 class="center" id="username-text">Benjamin's Profile</h1>
+    <h1 class="center" id="username-text"></h1>
 
-    <h4 class="white-text center" id="ingredients-input-label">Enter your on-hand ingredients below:</h4>
+    <h4 class="white-text center" id="ingredients-input-label">Update on-hand ingredients below:</h4>
 
-    <div class="chips-container container white-text">
-      <div class="chips chips-placeholder white-text"></div>
-    </div>
-
-    <div class="row center">
-      <a class="waves-effect waves-light btn" id="save-button"><i class="fas fa-piggy-bank"></i>&nbsp;SAVE INGREDIENTS</a>
+    <div class="chips-context">
+      <div class="chips-container container">
+        <span>Enter new ingredients:</span>
+        <div class="chips" id="newIngredients"></div>
+      </div>
+      <div class="chips-container container" id="prevIngredients">
+        <span>Previously stored ingredients:</span>
+        <br>
+      </div>
+      <div class="row center">
+        <a class="waves-effect waves-light btn" id="save-button"><i class="fas fa-piggy-bank"></i>&nbsp;SAVE INGREDIENTS</a>
+      </div>
     </div>
 
   <footer>
