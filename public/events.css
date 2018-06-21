@@ -13,16 +13,6 @@ nav {
   margin-bottom: 10em;
 }
 
-/* h1 {
-  letter-spacing: 3px;
-  font-weight: lighter;
-  color:#9fecf4;
-} */
-
-/* .container {
-  padding-top: 10em;
-} */
-
 span {
   color: white;
   letter-spacing: 3px;
@@ -35,10 +25,6 @@ span {
   letter-spacing: 3px;
   font-weight: lighter;
 }
-
-/* .side-nav {
-  color: #9fecf4;
-} */
 
 .create-event {
   background-color: #3d545f;
