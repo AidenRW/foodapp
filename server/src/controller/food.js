@@ -2,7 +2,7 @@ const model = require('../model/food.js')
 
 
 function userLogin (req, res, next) {
-
+  
 }
 
 function userSignup (req, res, next) {

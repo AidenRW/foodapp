@@ -1,6 +1,7 @@
 body {
   font-size: 32px;
-  background-image: url("img/mobile-bkgrd.svg");
+  background-color: #3d545f;
+  background-image: url("img/mobile-bkgrd-x.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11,13 +12,13 @@ nav {
   font-weight: lighter;
 }
 
-/* .below-logo{
-  padding-left: 12em;
-  width: 5em;
-} */
-h1 {
+/* h1 {
   letter-spacing: 3px;
   font-weight: lighter;
+  color:#9fecf4;
+} */
+
+.footer {
   color:#9fecf4;
 }
 
@@ -27,15 +28,16 @@ span {
   font-weight: lighter;
 }
 
-#center-btn {
-  margin-bottom: 1em;
-  letter-spacing: 3px;
-  font-weight: lighter;
+.container {
+  padding-top: 10em;
 }
 
 
-#events-header {
-  background-color: #08222e;
+#center-btn {
+  margin-top: 20em;
+  margin-bottom: 1em;
+  letter-spacing: 3px;
+  font-weight: lighter;
 }
 
 .create-event {
