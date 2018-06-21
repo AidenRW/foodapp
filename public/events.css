@@ -10,6 +10,7 @@ nav {
   background-color: #3d545f;
   letter-spacing: 3px;
   font-weight: lighter;
+  margin-bottom: 10em;
 }
 
 /* h1 {
@@ -18,9 +19,9 @@ nav {
   color:#9fecf4;
 } */
 
-.footer {
-  color:#9fecf4;
-}
+/* .container {
+  padding-top: 10em;
+} */
 
 span {
   color: white;
@@ -28,17 +29,16 @@ span {
   font-weight: lighter;
 }
 
-.container {
-  padding-top: 10em;
-}
-
-
 #center-btn {
   margin-top: 20em;
   margin-bottom: 1em;
   letter-spacing: 3px;
   font-weight: lighter;
 }
+
+/* .side-nav {
+  color: #9fecf4;
+} */
 
 .create-event {
   background-color: #3d545f;
@@ -55,4 +55,10 @@ span {
 .event-link {
   letter-spacing: 3px;
   font-weight: lighter;
+}
+
+.footer {
+  letter-spacing: 3px;
+  font-size: 40px;
+  color:#9fecf4;
 }

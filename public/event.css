@@ -1,9 +1,17 @@
 
-
-.header-logo {
-  background-image: url("img/header.svg");
+body {
+  background-image: url("img/mobile-bkgrd-x.svg");
+  font-size: 32px;
+  background-color: #3d545f;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header-logo {
+  /* background-image: url("img/header.svg"); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+
   text-align: center;
   height: 40em;
   width: auto;
@@ -14,11 +22,10 @@ nav, side-nav {
   background-color: #3d545f;
 }
 
-body {
-  /* background-color: #0f222d; */
-  background-image: url("img/mobile-bkgrd.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.footer {
+  letter-spacing: 3px;
+  font-size: 40px;
+  color:#9fecf4;
 }
 
 #user-body {
@@ -42,8 +49,3 @@ body {
 h3{
   font-size: 25px;
 }
-/* .page {
-  background-image: url("img/hotdog-bkgrd.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
