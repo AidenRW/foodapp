@@ -19,6 +19,10 @@ span {
   font-weight: lighter;
 }
 
+.orange-text {
+  color: #e8b83f;
+}
+
 #center-btn {
   margin-top: 20em;
   margin-bottom: 1em;

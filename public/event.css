@@ -1,4 +1,3 @@
-
 body {
   background-image: url("img/mobile-bkgrd-x.svg");
   font-size: 32px;
@@ -7,19 +6,12 @@ body {
   background-size: cover;
 }
 
-.header-logo {
-  /* background-image: url("img/header.svg"); */
-  /* background-repeat: no-repeat;
-  background-size: cover; */
-
-  text-align: center;
-  height: 40em;
-  width: auto;
-  padding-top: 8em;
+nav {
+  background-color: #3d545f;
 }
 
-nav, side-nav {
-  background-color: #3d545f;
+span {
+  color: #e8b83f;
 }
 
 .footer {
@@ -28,24 +20,19 @@ nav, side-nav {
   color:#9fecf4;
 }
 
-#user-body {
-  /* background-color: #0f222d; */
+#event-content {
+  margin-top: 20em;
+  background: linear-gradient(#08222e, #3d545f);
 }
 
-#user-icon {
-  width: 400px;
-  height: 400px;
-  padding-left: 40%;
-  background-image: url("icons/bird.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-color: #fff; */
+#event-name {
+  letter-spacing: 3px;
+  font-weight: lighter;
+  color: white;
 }
 
-.chips-container {
-  padding-top: 3em;
-  width: 70vw;
-}
-h3{
-  font-size: 25px;
+#event-details {
+  letter-spacing: 3px;
+  font-weight: lighter;
+  color: white;
 }

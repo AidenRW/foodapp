@@ -2,16 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Internal CSS -->
     <link href="event.css" rel="stylesheet">
     <title>MUNCH.</title>
   </head>
+
   <body>
     <nav>
       <div class="nav-wrapper">
@@ -31,39 +35,28 @@
       </div>
     </nav>
 
-    <div class="header-logo">
+    <div class="container" id="event-content">
+      <h1 class="center" id="event-name"></h1>
+      <ul class="center" id="event-details">
+      </ul>
+      <br>
     </div>
 
-    <div class="page">
-    <div class="container" id="user-body">
-        <div class="col s6 center">
-          <!-- <h2 id="name"class="text-center">EVENT NAME</h2> -->
-        </div>
-      <div class="col s6 center">
-        <!-- <img id="user-icon"> -->
-      </div>
+
+    <style>
+      .footer {
+        position: fixed;
+        background-color: #3d545f;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+
+    <div class="footer">
+      <p id="footer-text"></p>
     </div>
-
-    <div class="chips-container container white-text">
-      <p id="demo"></p>
-      <!-- <h3 id="instructions"class="white-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor sodales diam. Fusce quis aliquam arcu. Nunc metus ipsum, semper id dictum in, facilisis eu mauris. In hac habitasse platea dictumst. Phasellus quam sem, pulvinar et feugiat vitae, consequat sit amet tortor. Praesent interdum, leo at sagittis tincidunt, lectus odio gravida lectus, non laoreet quam ante in arcu. Maecenas ultricies, risus sit amet mollis iaculis, nisi dui finibus dolor, vitae aliquet felis risus quis ipsum. Fusce iaculis, dolor id sagittis ullamcorper, sem risus eleifend leo, eget lacinia leo lectus nec enim. In hac habitasse platea dictumst.</h3> -->
-    </div>
-  </div>
-
-  <style>
-.footer {
-  position: fixed;
-  background-color: #3d545f;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-</style>
-
-<div class="footer">
-<p>EVENTS</p>
-</div>
 
 
 

@@ -31,7 +31,7 @@ $( document ).ready(function(){
         newDiv1.innerHTML = `<i class="fas fa-calendar-alt fa-10x white-text"></i><a class="event-link white-text" href="event.html">${nameValue}</a>`
       let newDiv2 = document.createElement('div')
         newDiv2.setAttribute("class", "collapsible-body")
-        newDiv2.innerHTML = `<span>Location: ${locationValue}<br>Time: ${timeValue}<br>Date: ${dateValue}</span>`
+        newDiv2.innerHTML = `<span><span class="orange-text">Location:</span> ${locationValue}<br><span class="orange-text">Time:</span> ${timeValue}<br><span class="orange-text">Date:</span> ${dateValue}</span>`
       // ---- Append new event element (popout)
       newLi.appendChild(newDiv1)
       newLi.appendChild(newDiv2)
@@ -70,7 +70,7 @@ $( document ).ready(function(){
       newDiv1.innerHTML = `<i class="fas fa-calendar-alt fa-10x white-text"></i><a class="event-link white-text" href="event.html">${nameValue}</a>`
     let newDiv2 = document.createElement('div')
       newDiv2.setAttribute("class", "collapsible-body")
-      newDiv2.innerHTML = `<span>Location: ${locationValue}<br>Time: ${timeValue}<br>Date: ${dateValue}</span>`
+      newDiv2.innerHTML = `<span><span class="orange-text">Location:</span> ${locationValue}<br><span class="orange-text">Time:</span> ${timeValue}<br><span class="orange-text">Date:</span> ${dateValue}</span>`
     // ---- Append new event element (popout)
     newLi.appendChild(newDiv1)
     newLi.appendChild(newDiv2)
