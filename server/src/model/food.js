@@ -86,6 +86,23 @@ function eventInfo (id) {
     })
 }
 
+function eventUsers (id) {
+  return knex('events')
+  .where('id', id)
+  .then(result => {
+    const promises = result.map(innerResult => {
+      return knex('users_events')
+        .join('users', 'users_events.user_id', 'users.id')
+        .where('users_events.event_id', innerResult.id)
+        .then(finalResult => {
+          innerResult.userArray = finalResult
+          return innerResult
+        })
+    })
+    return Promise.all(promises)
+  })
+}
+
 function updateEvent () {
 
 }
@@ -104,6 +121,7 @@ module.exports = {
   createEvent,
   allEvents,
   eventInfo,
+  eventUsers,
   updateEvent,
   getRecipe
 }
