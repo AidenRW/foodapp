@@ -36,7 +36,7 @@ $( document ).ready(function(){
   // ---- Populating username on the user.html
   $.get(`api/users/${id}`)
     .done(result => {
-      $('#username-text').text(`${result[0].username}'s Profile'`)
+      $('#username-text').text(`${result[0].username}'s Profile`)
     })
     .fail(result => {
       console.log('.fail result: ', result);

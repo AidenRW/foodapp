@@ -50,7 +50,8 @@ span {
 }
 
 #with {
-  color: #e8b83f;
+   color: #e8b83f;
+   font-weight: bold;
 }
 
 .footer {
