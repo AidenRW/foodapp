@@ -33,9 +33,47 @@ function userSignup () {
 
 }
 
-function userInfo () {
-
+function userInfo (id) {
+  return knex('users')
+    .where('id', id)
+    .then(result => {
+      return result
+    })
 }
+
+function allIngredients (id) {
+  return knex('users')
+    .where('id', id)
+    .then(result => {
+      const promises = result.map(innerResult => {
+        return knex('users_ingredients')
+          .join('ingredients', 'users_ingredients.ingredient_id', 'ingredients.id')
+          .where('users_ingredients.user_id', innerResult.id)
+          .then(finalResult => {
+            innerResult.id = finalResult
+            return innerResult
+          })
+      })
+      return Promise.all(promises)
+    })
+}
+
+// return knex('cocktails')
+//   .then(cocktails => {
+//     const promises = cocktails.map(cocktail => {
+//       return knex('cocktails_ingredients')
+//         .join('ingredients', 'cocktails_ingredients.ingredient_id', 'ingredients.id')
+//         .where('cocktails_ingredients.cocktail_id', cocktail.id)
+//         .then(result => {
+//           cocktail.ingredients = result
+//           return cocktail
+//         })
+//     })
+//     return Promise.all(promises)
+//   })
+//
+// }
+
 
 function addIngredient () {
 
@@ -73,6 +111,7 @@ module.exports = {
   userLogin,
   userSignup,
   userInfo,
+  allIngredients,
   addIngredient,
   deleteIngredient,
   createEvent,

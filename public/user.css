@@ -20,7 +20,16 @@ h1{
   padding-top: 3em;
   width: 70vw;
   height: 10em;
-  background: linear-gradient(#08222e, #3d545f)
+  background: linear-gradient(#08222e, #3d545f);
+  color: white;
+}
+
+.chips-context {
+  color: white;
+}
+
+.chip {
+  background-color: #9fecf4;
 }
 
 #save-button {
