@@ -61,7 +61,10 @@ function allEvents (req, res, next) {
 }
 
 function eventInfo (req, res, next) {
-
+  model.eventInfo(req.params.id)
+    .then(result => {
+      res.send(result)
+    })
 }
 
 function updateEvent (req, res, next) {

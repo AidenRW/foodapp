@@ -11,7 +11,7 @@ router.post('/api/signup', ctrl.userSignup)
 // GET api/users/:id (retrieve user information) *** [FUNCTIONING AS INTENDED]
 router.get('/api/users/:id', ctrl.userInfo)
 
-// GET api/users/:id/ingredients
+// GET api/users/:id/ingredients *** [FUNCTIONING AS INTENDED]
 router.get('/api/users/:id/ingredients', ctrl.allIngredients)
 
 // POST api/users/:id/ingredients (add ingredients)

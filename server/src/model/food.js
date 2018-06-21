@@ -58,23 +58,6 @@ function allIngredients (id) {
     })
 }
 
-// return knex('cocktails')
-//   .then(cocktails => {
-//     const promises = cocktails.map(cocktail => {
-//       return knex('cocktails_ingredients')
-//         .join('ingredients', 'cocktails_ingredients.ingredient_id', 'ingredients.id')
-//         .where('cocktails_ingredients.cocktail_id', cocktail.id)
-//         .then(result => {
-//           cocktail.ingredients = result
-//           return cocktail
-//         })
-//     })
-//     return Promise.all(promises)
-//   })
-//
-// }
-
-
 function addIngredient () {
 
 }
@@ -95,8 +78,12 @@ function allEvents () {
     })
 }
 
-function eventInfo () {
-
+function eventInfo (id) {
+  return knex('events')
+    .where('id', id)
+    .then(result => {
+      return result
+    })
 }
 
 function updateEvent () {
