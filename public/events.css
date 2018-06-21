@@ -14,7 +14,7 @@ nav {
 }
 
 span {
-  color: white;
+  color: #9fecf4;
   letter-spacing: 3px;
   font-weight: lighter;
 }
@@ -22,6 +22,7 @@ span {
 .orange-text {
   color: #e8b83f;
 }
+
 
 #center-btn {
   margin-top: 20em;
@@ -43,6 +44,7 @@ span {
 }
 
 .event-link {
+  color: #9fecf4;
   letter-spacing: 3px;
   font-weight: lighter;
 }

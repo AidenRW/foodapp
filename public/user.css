@@ -11,22 +11,14 @@ body {
   background-size: cover;
 }
 
-h1{
-  color:#9fecf4;
-  /* background-color: #08222e; */
-}
-
-
 .chips-container {
-  padding-top: 3em;
+  padding-left: 1em;
+  padding-top: 1em;
   width: 70vw;
   height: 10em;
   background: linear-gradient(#08222e, #3d545f);
-  color: white;
-}
-
-.chips-context {
-  color: white;
+  color:#9fecf4;
+  font-size: 20px;
 }
 
 .chip {
@@ -34,16 +26,19 @@ h1{
 }
 
 #save-button {
-  margin-top: 1em;
-  letter-spacing: 3px;
+  margin-top: 5em;
+  letter-spacing: 4px;
   font-weight: lighter;
   background-color: #e8b83f;
+
 }
 
 #ingredients-input-label {
+  color: #9fecf4;
   font-family: 'Rubik', sans-serif;
   letter-spacing: 3px;
   font-weight: lighter;
+  font-size: 40px;
 }
 
 #username-text {
@@ -52,9 +47,18 @@ h1{
   font-weight: lighter;
 }
 
-/* #with { */
-  /* color: #e8b83f;
-} */
+
+#with {
+   color: #e8b83f;
+   font-weight: bold;
+}
+
+.blue-text {
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding-left: 1.5em;
+}
+
 .footer {
   letter-spacing: 3px;
   font-size: 40px;
