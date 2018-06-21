@@ -52,9 +52,9 @@ h1{
   font-weight: lighter;
 }
 
-span {
-  color: #e8b83f;
-}
+/* #with { */
+  /* color: #e8b83f;
+} */
 .footer {
   letter-spacing: 3px;
   font-size: 40px;

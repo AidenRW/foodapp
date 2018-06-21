@@ -31,7 +31,7 @@ span {
 }
 
 .create-event {
-  background-color: #3d545f;
+  background-color: #e8b83f;
 }
 
 .collapsible-header {
@@ -47,8 +47,13 @@ span {
   font-weight: lighter;
 }
 
+#with {
+  color: #e8b83f;
+}
+
 .footer {
   letter-spacing: 3px;
   font-size: 40px;
   color:#9fecf4;
+  font-weight: lighter;
 }
