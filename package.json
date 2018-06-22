@@ -26,6 +26,8 @@
     "express": "^4.16.3",
     "jsonwebtoken": "^8.3.0",
     "knex": "^0.14.6",
-    "pg": "^7.4.3"
+    "pg": "^7.4.3",
+    "rapidapi-connect": "0.0.6",
+    "unirest": "^0.5.1"
   }
 }

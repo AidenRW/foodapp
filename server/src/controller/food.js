@@ -67,6 +67,13 @@ function eventInfo (req, res, next) {
     })
 }
 
+function addUser (req, res, next) {
+  model.addUser(req.params.id, req.params.eventId)
+    .then(result => {
+      res.send(result)
+    })
+}
+
 function eventUsers (req, res, next) {
   model.eventUsers(req.params.id)
     .then(result => {
@@ -78,9 +85,12 @@ function updateEvent (req, res, next) {
 
 }
 
-function getRecipe (req, res, next) {
-
-}
+// function getRecipe (req, res, next) {
+//   model.getRecipe(req.body.string)
+//   .then(result => {
+//     res.send(result)
+//   })
+// }
 
 module.exports = {
   userLogin,
@@ -92,7 +102,8 @@ module.exports = {
   createEvent,
   allEvents,
   eventInfo,
+  addUser,
   eventUsers,
   updateEvent,
-  getRecipe
+  // getRecipe
 }

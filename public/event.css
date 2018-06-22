@@ -14,10 +14,16 @@ span {
   color: #e8b83f;
 }
 
+#with {
+   color: #e8b83f;
+   font-weight: bold;
+}
+
 .footer {
   letter-spacing: 3px;
   font-size: 40px;
   color:#9fecf4;
+  font-weight: lighter;
 }
 
 .collapsible-header {
@@ -49,4 +55,9 @@ span {
   letter-spacing: 3px;
   font-weight: lighter;
   color: white;
+}
+
+#start-button {
+  letter-spacing: 3px;
+  background-color: #e8b83f;
 }

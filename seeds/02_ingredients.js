@@ -10,7 +10,10 @@ exports.seed = function(knex, Promise) {
         {id: 3, name: 'chicken'},
         {id: 4, name: 'bratwurst'},
         {id: 5, name: 'beef'},
-        {id: 6, name: 'brussel sprouts'}
+        {id: 6, name: 'brussel sprouts'},
+        {id: 7, name: 'spinach'},
+        {id: 8, name: 'milk'},
+        {id: 9, name: 'cheese'}
       ])
     }).then(() => {
       return knex.raw(
