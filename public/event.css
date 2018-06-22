@@ -56,3 +56,8 @@ span {
   font-weight: lighter;
   color: white;
 }
+
+#start-button {
+  letter-spacing: 3px;
+  background-color: #e8b83f;
+}

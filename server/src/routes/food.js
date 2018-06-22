@@ -29,6 +29,9 @@ router.get('/api/events', ctrl.allEvents)
 // GET api/events/:id (retrieve event data by ID) *** [FUNCTIONING AS INTENDED]
 router.get('/api/events/:id', ctrl.eventInfo)
 
+// POST api/users/:id/events/:eventId
+router.post('/api/users/:id/events/:eventId', ctrl.addUser)
+
 // GET api/events/:id/users (retrieve user data by event ID) *** [FUNCTIONING AS INTENDED]
 router.get('/api/events/:id/users', ctrl.eventUsers)
 
@@ -36,6 +39,6 @@ router.get('/api/events/:id/users', ctrl.eventUsers)
 router.patch('/api/events/:id', ctrl.updateEvent)
 
 // POST api/getrecipe (send ingredients to spoonacular API)
-router.post('/api/getrecipe', ctrl.getRecipe)
+// router.post('/api/getrecipe', ctrl.getRecipe)
 
 module.exports = router
