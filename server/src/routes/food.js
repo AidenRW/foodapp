@@ -39,6 +39,6 @@ router.get('/api/events/:id/users', ctrl.eventUsers)
 router.patch('/api/events/:id', ctrl.updateEvent)
 
 // POST api/getrecipe (send ingredients to spoonacular API)
-// router.post('/api/getrecipe', ctrl.getRecipe)
+router.post('/api/getrecipe', ctrl.getRecipe)
 
 module.exports = router

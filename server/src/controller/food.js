@@ -1,7 +1,8 @@
+require('dotenv').config()
 const model = require('../model/food.js')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-require('dotenv').config()
+const unirest = require('unirest');
 
 
 function userLogin (req, res, next) {
@@ -85,12 +86,24 @@ function updateEvent (req, res, next) {
 
 }
 
-// function getRecipe (req, res, next) {
-//   model.getRecipe(req.body.string)
-//   .then(result => {
-//     res.send(result)
-//   })
-// }
+function getRecipe (req, res, next) {
+  unirest.get(`https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?ingredients=${req.body.string}&number=5&ranking=1`)
+      .header("X-Mashape-Key", process.env.MASHAPE_KEY)
+      .header("X-Mashape-Host", "spoonacular-recipe-food-nutrition-v1.p.mashape.com")
+      .end(function (result) {
+        console.log(result.status, result.headers, result.body);
+        res.send(result)
+      });
+  // model.getRecipe(req.body.string)
+  // .then(result => {
+  //   console.log('result controller', result);
+  //   res.send(result)
+  // })
+  // .catch(result => {
+  //   console.log('.catch result: ', result);
+  //   res.send(result)
+  // })
+}
 
 module.exports = {
   userLogin,
@@ -105,5 +118,5 @@ module.exports = {
   addUser,
   eventUsers,
   updateEvent,
-  // getRecipe
+  getRecipe
 }

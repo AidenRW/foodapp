@@ -118,15 +118,15 @@ function updateEvent () {
 
 }
 
-// function getRecipe (string) {
-//   console.log(string); unirest.get(`https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?ingredients=${string}&number=5&ranking=1`)
-//     .header("X-Mashape-Key", process.env.MASHAPE_KEY)
-//     .header("X-Mashape-Host", "spoonacular-recipe-food-nutrition-v1.p.mashape.com")
-//     .end(function (result) {
-//       // console.log(result.status, result.headers, result.body);
-//       // return result.body
-//     });
-// }
+function getRecipe (string) {
+return unirest.get(`https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?ingredients=${string}&number=5&ranking=1`)
+    .header("X-Mashape-Key", process.env.MASHAPE_KEY)
+    .header("X-Mashape-Host", "spoonacular-recipe-food-nutrition-v1.p.mashape.com")
+    .end(function (result) {
+      console.log(result.status, result.headers, result.body);
+      // return result
+    });
+}
 
 module.exports = {
   userLogin,
@@ -141,5 +141,5 @@ module.exports = {
   addUser,
   eventUsers,
   updateEvent,
-  // getRecipe
+  getRecipe
 }

@@ -58,6 +58,12 @@ span {
 }
 
 #start-button {
+  margin-top: 2em;
   letter-spacing: 3px;
   background-color: #e8b83f;
+}
+
+#new-recipe {
+  padding-left: 3.5em;
+  padding-top: 2em;
 }

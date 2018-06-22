@@ -60,7 +60,7 @@ $( document ).ready(function(){
     const queryString = (string) => {
       for (let i = 0; i < string.length; i++) {
         if(string[i] === ','){
-          ans.push('%2c')
+          ans.push('%2C')
         } else if (string[i] === ' ') {
           ans.push('+')
         } else {
@@ -70,14 +70,24 @@ $( document ).ready(function(){
       return ans.join('').slice(0,-4)
     }
     const stringifiedInput = queryString(apiInput)
-    console.log(stringifiedInput);
-    // $.post('/api/getrecipe', {'string': apiInput})
-    //   .done(result => {
-    //     console.log('.done result: ', result);
-    //   })
-    //   .fail(result => {
-    //     console.log('.fail result: ', result);
-    //   })
+    // console.log(stringifiedInput);
+    $.post('/api/getrecipe', {'string': stringifiedInput})
+      .done(result => {
+        console.log('.done result: ', result.body);
+        let id = Math.floor((Math.random() * 5) + 1)
+        console.log(result.body[id]);
+        $('#new-recipe').append(
+          `<ul class="collapsible container center" data-collapsible="accordion">
+            <li class="center">
+              <div class="collapsible-header center">${result.body[id]['title']}</div>
+              <div class="collapsible-body center"><span><img src="${result.body[id]['image']}"></span></div>
+            </li>
+          </ul>`)
+          $('.collapsible').collapsible();
+      })
+      .fail(result => {
+        console.log('.fail result: ', result);
+      })
   })
 
 }) // End Document Ready
