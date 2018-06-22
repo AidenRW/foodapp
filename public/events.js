@@ -83,7 +83,7 @@ $( document ).ready(function(){
     let newLi = document.createElement('li')
     let newDiv1 = document.createElement('div')
       newDiv1.setAttribute("class", "collapsible-header")
-      newDiv1.innerHTML = `<i class="fas fa-calendar-alt fa-10x white-text"></i><a class="event-link" href="event.html">${nameValue}</a>&nbsp;<span class="join-event"><i class="fas fa-plus-square"></i></span>`
+      newDiv1.innerHTML = `<i class="fas fa-calendar-alt fa-10x white-text"></i><a class="event-link white-text" href="event.html">${nameValue}</a>&nbsp;<span class="join-event"><i class="fas fa-plus-square"></i></span>`
     let newDiv2 = document.createElement('div')
       newDiv2.setAttribute("class", "collapsible-body")
       newDiv2.innerHTML = `<span><span class="orange-text">Location:</span> ${locationValue}<br><span class="orange-text">Time:</span> ${timeValue}<br><span class="orange-text">Date:</span> ${dateValue}</span>`
@@ -92,7 +92,6 @@ $( document ).ready(function(){
     newLi.appendChild(newDiv2)
     newUl.appendChild(newLi)
     eventsBox.appendChild(newUl)
-    let eventLink = document.getElementById('event-link')
     $('.collapsible').collapsible();
   })
 }) // End Document Ready

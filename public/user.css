@@ -33,6 +33,19 @@ body {
 
 }
 
+.blue-text {
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding-left: 1.5em;
+}
+
+.footer {
+  letter-spacing: 3px;
+  font-size: 40px;
+  color:#9fecf4;
+  font-weight: lighter;
+}
+
 #ingredients-input-label {
   color: #9fecf4;
   font-family: 'Rubik', sans-serif;
@@ -49,21 +62,7 @@ body {
 
 }
 
-
 #with {
    color: #e8b83f;
    font-weight: bold;
-}
-
-.blue-text {
-  font-size: 22px;
-  letter-spacing: 2px;
-  padding-left: 1.5em;
-}
-
-.footer {
-  letter-spacing: 3px;
-  font-size: 40px;
-  color:#9fecf4;
-  font-weight: lighter;
 }
