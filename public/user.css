@@ -6,7 +6,7 @@ nav {
 
 body {
   background-color: #3d545f;
-  background-image: url("img/mobile-bkgrd-x.svg");
+  background-image: url("img/mobile-bkgrd.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -45,6 +45,8 @@ body {
   margin-top: 12em;
   letter-spacing: 3px;
   font-weight: lighter;
+  color: #9fecf4;
+
 }
 
 
