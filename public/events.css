@@ -1,7 +1,7 @@
 body {
   font-size: 32px;
   background-color: #3d545f;
-  background-image: url("img/mobile-bkgrd-x.svg");
+  background-image: url("img/mobile-bkgrd.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -51,6 +51,7 @@ span {
 
 #with {
   color: #e8b83f;
+  font-weight: bold;
 }
 
 .footer {
