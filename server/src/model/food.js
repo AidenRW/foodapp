@@ -1,7 +1,10 @@
+require('dotenv').config()
 const knex = require('../../../knex')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-require('dotenv').config()
+const RapidAPI = new require('rapidapi-connect');
+const rapid = new RapidAPI('munchwithfriends', process.env.RAPID_KEY);
+const unirest = require('unirest');
 
 function userLogin (email, password) {
   let errors = []
@@ -86,6 +89,14 @@ function eventInfo (id) {
     })
 }
 
+function addUser (userId, eventId) {
+  return knex('users_events')
+    .insert({user_id: userId, event_id: eventId})
+    .then(result => {
+      return result
+    })
+}
+
 function eventUsers (id) {
   return knex('events')
   .where('id', id)
@@ -107,9 +118,15 @@ function updateEvent () {
 
 }
 
-function getRecipe () {
-
-}
+// function getRecipe (string) {
+//   console.log(string); unirest.get(`https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?ingredients=${string}&number=5&ranking=1`)
+//     .header("X-Mashape-Key", process.env.MASHAPE_KEY)
+//     .header("X-Mashape-Host", "spoonacular-recipe-food-nutrition-v1.p.mashape.com")
+//     .end(function (result) {
+//       // console.log(result.status, result.headers, result.body);
+//       // return result.body
+//     });
+// }
 
 module.exports = {
   userLogin,
@@ -121,7 +138,8 @@ module.exports = {
   createEvent,
   allEvents,
   eventInfo,
+  addUser,
   eventUsers,
   updateEvent,
-  getRecipe
+  // getRecipe
 }

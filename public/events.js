@@ -1,18 +1,23 @@
 $( document ).ready(function(){
-
+  // ---- Materialize settings
   $('.modal').modal();
-
   $('.collapsible').collapsible();
-
   $(".button-collapse").sideNav({
     menuWidth: 300, // Default is 300
     edge: 'left', // Choose the horizontal origin
     closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
     draggable: true, // Choose whether you can drag to open on touch screens,
   });
-//-------------- Load Ongoing Events -----------------//
+  // ---- Retrieve user id
+  function parseJWT (token) {
+       var base64Url = token.split('.')[1];
+       var base64 = base64Url.replace('-', '+').replace('_', '/');
+       return JSON.parse(window.atob(base64));
+     };
+  const userData = parseJWT(document.cookie)
+  const id = userData.userId
+  // ---- Load ongoing events
   $.get('/api/events', function(data) {
-
     for (let i = 0; i < data.length; i++) {
       let nameValue = data[i].event_name
       let timeValue = data[i].time
@@ -28,7 +33,7 @@ $( document ).ready(function(){
       let newLi = document.createElement('li')
       let newDiv1 = document.createElement('div')
         newDiv1.setAttribute("class", "collapsible-header")
-        newDiv1.innerHTML = `<i class="fas fa-calendar-alt fa-10x white-text"></i><a class="event-link white-text" href="event.html">${nameValue}</a>`
+        newDiv1.innerHTML = `<i class="fas fa-calendar-alt fa-10x white-text"></i><a class="event-link white-text" href="event.html">${nameValue}</a>&nbsp;<span class="join-event"><i class="fas fa-plus-square"></i></span>`
       let newDiv2 = document.createElement('div')
         newDiv2.setAttribute("class", "collapsible-body")
         newDiv2.innerHTML = `<span><span class="orange-text">Location:</span> ${locationValue}<br><span class="orange-text">Time:</span> ${timeValue}<br><span class="orange-text">Date:</span> ${dateValue}</span>`
@@ -41,12 +46,23 @@ $( document ).ready(function(){
       eventLink.addEventListener('click', function () {
         localStorage.setItem('event_id', JSON.stringify(event_id))
       })
+      let joinEvent = document.getElementsByClassName('join-event')[i]
+      joinEvent.addEventListener('click', function () {
+        localStorage.setItem('event_id', JSON.stringify(event_id))
+        let payload = {id: id, eventId: event_id}
+        $.post(`/api/users/${id}/events/${event_id}`)
+          .done(result => {
+            console.log('.done result: ', result);
+            Materialize.toast(`You have joined an event!`, 4000)
+          })
+          .fail(result => {
+            console.log('.fail result: ', result);
+          })
+      })
       $('.collapsible').collapsible();
     }
   })
-//------------ End Load Ongoing Events ---------------//
-
-// -------------- New Event Creation --------------- //
+  // ---- New event creation
   let button = document.getElementById('create-event')
   button.addEventListener("click", function(e) {
     e.preventDefault()
@@ -67,7 +83,7 @@ $( document ).ready(function(){
     let newLi = document.createElement('li')
     let newDiv1 = document.createElement('div')
       newDiv1.setAttribute("class", "collapsible-header")
-      newDiv1.innerHTML = `<i class="fas fa-calendar-alt fa-10x"></i><a class="event-link" href="event.html">${nameValue}</a>`
+      newDiv1.innerHTML = `<i class="fas fa-calendar-alt fa-10x white-text"></i><a class="event-link" href="event.html">${nameValue}</a>&nbsp;<span class="join-event"><i class="fas fa-plus-square"></i></span>`
     let newDiv2 = document.createElement('div')
       newDiv2.setAttribute("class", "collapsible-body")
       newDiv2.innerHTML = `<span><span class="orange-text">Location:</span> ${locationValue}<br><span class="orange-text">Time:</span> ${timeValue}<br><span class="orange-text">Date:</span> ${dateValue}</span>`
@@ -79,5 +95,4 @@ $( document ).ready(function(){
     let eventLink = document.getElementById('event-link')
     $('.collapsible').collapsible();
   })
-// ------------ End New Event Creation ------------- //
 }) // End Document Ready
