@@ -3,7 +3,7 @@ Allows users to collaborate and share ingredients for an event and receive autom
 
 Aiden Whelton, Benjamin Broad, Robin Statz -- 2018
 
-Please visit http://munchwithfriends.herokuapp.com/ to demo our app!  User sign-up will be integrated in future updates, so please feel free to sign-in with the following information to check things out (username: benjamin.broad@colorado.edu, password: beau).
+Please visit http://munchwithfriends.herokuapp.com/ from your mobile device to demo our app!  User sign-up will be integrated in future updates, so please feel free to sign-in with the following information to check things out (username: benjamin.broad@colorado.edu, password: beau).
 
 # Entity-Relationship Diagram
 ![Example](/public/img/Food_App_ERD_v2.0.jpg)
